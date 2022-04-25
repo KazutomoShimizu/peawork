@@ -1,0 +1,6 @@
+  <h1><strong><%= @user.name %>のページ</strong></h1>
+
+<p><strong>メールアドレス: <%= @user.email %></strong></p>
+<%= link_to "あなたのお気に入り投稿一覧", bookmark_path %>
+<%= link_to "編集", edit_user_path(@user) %> |
+<%= link_to '戻る', blogs_path %>
